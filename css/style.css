@@ -162,6 +162,24 @@ label .checked .img_label{
     margin-left: 20px;
 }
 
+.img_cross_create{
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/icon-cross.svg');
+    background-size: cover;
+    background-position: center;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+
+.create:hover .img_cross_create{
+    display: block;
+}
+
 /* #### */
 
 /* 
