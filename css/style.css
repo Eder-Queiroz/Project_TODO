@@ -17,6 +17,8 @@
     --hover-color: hsl(236, 33%, 92%);
     --image: url('../images/bg-desktop-dark.jpg');
     --icon-image: url('../images/icon-sun.svg');
+    --border-buttom: 2px solid rgb(32, 33, 44, .7);
+    --border-buttomh: 2px solid rgba(32, 33, 44, 1);
 }
 
 html, body{
@@ -102,20 +104,8 @@ button{
     width: 90px;
     height: 40px;
     border-radius: 20px;
-    border: 1px solid rgb(32, 33, 44, .5);
-    /* gradient */
-
-    background: rgba(50,40,180,1);
-    background: -moz-linear-gradient(left, rgba(50,40,180,1) 0%, rgba(89,39,160,1) 35%, rgba(102,35,144,1) 56%, rgba(103,26,126,1) 74%, rgba(122,29,117,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50,40,180,1)), color-stop(35%, rgba(89,39,160,1)), color-stop(56%, rgba(102,35,144,1)), color-stop(74%, rgba(103,26,126,1)), color-stop(100%, rgba(122,29,117,1)));
-    background: -webkit-linear-gradient(left, rgba(50,40,180,1) 0%, rgba(89,39,160,1) 35%, rgba(102,35,144,1) 56%, rgba(103,26,126,1) 74%, rgba(122,29,117,1) 100%);
-    background: -o-linear-gradient(left, rgba(50,40,180,1) 0%, rgba(89,39,160,1) 35%, rgba(102,35,144,1) 56%, rgba(103,26,126,1) 74%, rgba(122,29,117,1) 100%);
-    background: -ms-linear-gradient(left, rgba(50,40,180,1) 0%, rgba(89,39,160,1) 35%, rgba(102,35,144,1) 56%, rgba(103,26,126,1) 74%, rgba(122,29,117,1) 100%);
-    background: linear-gradient(to right, rgba(50,40,180,1) 0%, rgba(89,39,160,1) 35%, rgba(102,35,144,1) 56%, rgba(103,26,126,1) 74%, rgba(122,29,117,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3228b4', endColorstr='#7a1d75', GradientType=1 );
-
-    /* === */
-
+    border: var(--border-buttom);
+    background-color: transparent;
     --shadow: 2px 2px 8px 1px hsl(235, 16%, 15%);
     box-shadow: var(--shadow);
     color: rgba(255,255,255,.7);
@@ -125,7 +115,7 @@ button:hover{
     width: 92px;
     height: 42px;
     color: rgba(255,255,255,1);
-    border: 1px solid rgba(32, 33, 44, 1);
+    border: var(--border-buttomh);
 }
 
 /* ==== */

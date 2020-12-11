@@ -11,7 +11,9 @@ const initialColors = {
     color: getStyle(html, "--color"),
     hoverColor: getStyle(html, "--hover-color"),
     image: getStyle(html, "--image"),
-    iconImage: getStyle(html, "--icon-image")
+    iconImage: getStyle(html, "--icon-image"),
+    borderButtom: getStyle(html, '--border-buttom'),
+    borderButtomh: getStyle(html, '--border-buttomh')
 }
 
 const lightMode = {
@@ -21,7 +23,9 @@ const lightMode = {
     color: "#000000",
     hoverColor: "#333333",
     image: "url('../images/bg-desktop-light.jpg')",
-    iconImage: "url('../images/icon-moon.svg')"
+    iconImage: "url('../images/icon-moon.svg')",
+    borderButtom: "1px solid rgba(255, 255, 255, .7)",
+    borderButtomh: "1px solid rgba(255, 255, 255, .9)"
 }
 // ####
 
