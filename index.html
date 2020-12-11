@@ -13,17 +13,21 @@
 </head>
 <body>
     
+    <input type="checkbox" id="themeModeToggle" name="theme">
+
     <section class="main">
 
         <div class="center">
 
             <div class="logo">TODO</div><!--logo-->
 
-            <div class="theme"><img src="images/icon-sun.svg" alt="icon-sun"></div><!--theme-->
+            <label class="theme" for="themeModeToggle">
+                <div class="icon_theme"></div>
+            </label><!--theme-->
 
             <div class="clear"></div><!--clear-->
 
-            <textarea name="#" id="#" cols="30" rows="10" placeholder="Create a new todo..."></textarea>
+            <input type="text" name="name" id="name" placeholder="Create a new todo...">
 
         </div><!--center-->
 
@@ -93,6 +97,8 @@
         </div><!--center-->
 
     </section><!--works-->
+
+<script src="js/themeMode.js"></script>
 
 </body>
 </html>
