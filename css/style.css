@@ -164,9 +164,6 @@ button:hover{
 
 .create{
     width: 100%;
-    height: 60px;
-    padding: 0 4%;
-    border-bottom: 1px solid rgb(80, 80, 80);
 }
 
 input[type=checkbox]{
@@ -175,12 +172,11 @@ input[type=checkbox]{
 
 .create label{
     position: relative;
+    margin: 18px 2% 0 2%;
     cursor: pointer;
     border: 1px solid rgb(80, 80, 80);
     width: 25px;
     height: 25px;
-    vertical-align: middle;
-    display: inline-block;
     border-radius: 15px;
 }
 
@@ -209,9 +205,21 @@ label .checked .img_label{
     display: block;
 }
 
-.create span{
+.create ul{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.create li{
     color: var(--color);
-    margin-left: 20px;
+    margin-left: 10px;
+    width: 80%;
+    position: relative;
+    text-decoration: wavy;
 }
 
 .img_cross_create{
@@ -219,17 +227,20 @@ label .checked .img_label{
     height: 18px;
     background-image: url('../images/icon-cross.svg');
     background-size: cover;
-    background-position: center;
-    float: right;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     display: none;
+    align-items: flex-end;
+    margin-top: 21px;
+    margin-right: 12px;
     cursor: pointer;
 }
 
 .create:hover .img_cross_create{
-    display: block;
+    display: flex;
+}
+
+.line_li{
+    border-bottom: 1px solid rgb(80, 80, 80);
+    width: 100%;
 }
 
 /* #### */

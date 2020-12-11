@@ -32,8 +32,8 @@ const transformKey = key => "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
 const changeColors = (colors) => {
 
     // pegando as chaves dos objetos e mapeando
-    Object.keys(colors).map(key => 
-        html.style.setProperty(transformKey(key), colors[key])    
+    Object.keys(colors).map(key =>
+        html.style.setProperty(transformKey(key), colors[key])
     )
 
 }
